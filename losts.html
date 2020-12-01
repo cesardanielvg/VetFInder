@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta tags to SEO positioning -->
+    <meta name="description" content="Página dedicada para encontrar a tu mascota" />
+    <meta name="keywords" content="web, vet, pets, dog, cat, html, template, javascript" />
+    <meta name="author" content="Cesar Vergara" />
+    <!-- Icon -->
+    <link rel="Icon" href="favicon.ico" />
+    <!-- Styles, Script, Font Family... -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+    <script src="https://kit.fontawesome.com/3a84c50d6a.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/navbar.js"></script>
+    <title>VetFinder</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar container" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="assets/img/brand.png" class="img-logo" alt="Logotype" />
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item">
+                    INICIO
+                </a>
+
+                <a href="searchs.html" class="navbar-item">
+                    SE BUSCA
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        QUIERO AYUDAR
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            En adopcion
+                        </a>
+                        <a href="founds.html" class="navbar-item">
+                            He encontrado!
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Reportar extravio
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <a class="navbar-item" onclick="toggleModal()">Acerca</a>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-background" onclick="toggleModal()"></div>
+            <div class="modal-content">
+                <article class="message">
+                    <div class="message-header">
+                        <p>VetFinder</p>
+                        <button class="delete" aria-label="delete" onclick="toggleModal()"></button>
+                    </div>
+                    <div class="message-body">
+                        VetFinder es el sitio web enfocado a ayudar a tu comunidad a recuperar a sus mascotas perdidas.
+                        Navega en las opciones de arriba para postear un extravio o contactar en caso de haber encontrado.
+                    </div>
+                </article>
+            </div>
+        </div>
+    </nav>
+    <!-- END -->
+
+    <!-- Main Content -->
+    <main>
+        <section class="section">
+            <div class="container">
+                <!-- Slideshow container -->
+                <div id="slideshow">
+                    <div class="slides fade">
+                        <p class="numbertext">1 / 3</p>
+                        <img src="assets/img/1.webp">
+                        <div class="text">
+                            <h1 class="title has-text-white">
+                                Vet Finder
+                            </h1>
+                            <h2 class="subtitle has-text-white">
+                                El lugar indicado para encontrar a tu mascota
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <p class="numbertext">2 / 3</p>
+                        <img src="assets/img/2.webp">
+                        <div class="text">
+                            <h1 class="title has-text-white">
+                                No abandones
+                            </h1>
+                            <h2 class="subtitle has-text-white">
+                                Utiliza la opción En adopción para encontrarles un hogar
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <p class="numbertext">3 / 3</p>
+                        <img src="assets/img/3.webp">
+                        <div class="text">
+                            <h1 class="title has-text-white">
+                                ¿Buscas una mascota?
+                            </h1>
+                            <h2 class="subtitle has-text-white">
+                               También te podemos ayudar con eso
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- END -->
+
+                <hr class="has-background-vet">
+
+                <!-- Mision -->
+                <div class="columns">
+                    <div class="column is-one-quarter">
+                        <h1 class="title is-violet">
+                            Mision
+                        </h1>
+                        <h2 class="subtitle">
+                            Salvar mascotas
+                        </h2>
+                    </div>
+                    <div class="column">
+                        <h2 class="subtitle">
+                            Como lo logramos
+                        </h2>
+                        <p class="content">
+                            Nuestra misión es rescatar tantas mascotas como se puedan del abandono o extravo
+                        </p>
+                    </div>
+                </div>
+                <div class="hero is-medium has-background">
+                    <img src="assets/img/pet-5.webp" alt="Something" class="hero-background is-transparent">
+                    <div class="hero-body">
+                        <div class="container">
+                            <h1 class="title">
+                                Gatos, Perros, conejos
+                            </h1>
+                            <h2 class="subtitle">
+                                En VetFinder no ponemos restricciones, busca cualquier tipo de mascota con nuestros flexibles
+                                formularios
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- END -->
+
+                <br>
+
+                <!-- Vision -->
+                <div class="columns has-text-right">
+                    <div class="column">
+                        <h2 class="subtitle">
+                            How it will happen
+                        </h2>
+                        <p class="content">
+                            Ser un sitio web conocido nacionalmente por su eficacia para encontrarle hogar a mascotas,
+                            asi como ayudar a personas a recuperar a sus mascotas perdidas.
+                        </p>
+                    </div>
+                    <div class="column is-one-quarter">
+                        <h1 class="title is-violet">
+                            Vision
+                        </h1>
+
+                    </div>
+                </div>
+                <div class="hero is-medium has-background">
+                    <img src="assets/img/pet-3.webp" alt="Something" class="hero-background is-transparent">
+                    <div class="hero-body">
+                        <div class="container has-text-right">
+                            <h1 class="title">
+                                Historias de éxito
+                            </h1>
+                            <h2 class="subtitle">
+                                Pronto agregaremos la sección de Historias de éxito, llena de testimonions de dueños felices
+                                que encontraron de vuelta a sus acompañantes mascotas. También familias que han encontrado un
+                                nuevo miembro para su familia a través de este sitio.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- END -->
+
+                <hr class="has-background-grey-lighter">
+
+                <div class="commitment has-text-centered has-background-vet">
+                    <h1 class="title py-4 has-text-white">
+                       Nuestro compromiso
+                    </h1>
+                    <p class="subtitle has-text-white p-4">
+                        VetFinder está comprometido con la seguridad y privacidad de la infromación de sus usuarios y mascotas!
+                        No recolectamos información con propositos de marketing y tenemos estrictas politicas de elminar
+                        infrmación desactualizada para los propositos del sitio.
+                    </p>
+                    <br>
+                </div>
+
+                <br>
+
+                <!-- Latest Uploads -->
+                <div class="latest has-text-centered">
+                    <h1 class="title">
+                        Los más populares
+                    </h1>
+                    <h2 class="subtitle">
+                        Ayudalos a volver con su familia
+                    </h2>
+
+                    <div class="columns">
+                        <div class="card column m-4">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="assets/img/pet-1.webp" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p><strong>Name: </strong>Kitty</p>
+
+                                <p><strong>Last seen: </strong>Colonia Atlas</p>
+                                <p>Please call: <strong>33-3333-3355</strong></p>
+                                <br>
+                                <div>
+                                    <div class="has-text-left">
+                                        <span class="tag is-info">Cat</span>
+                                        <span class="tag is-success">Reciente</span>
+                                        <span class="tag is-warning">Recompensa</span>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <a href="founds.html" class="button is-small is-fullwidth is-violet is-outlined">
+                                            Tengo información
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card column m-4">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="assets/img/pet-2.webp" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p><strong>Name: </strong>Lorem</p>
+
+                                <p><strong>Last seen: </strong>Colonia centro, cerca de la catedral.</p>
+                                <p>Please call: <strong>33-2233-4455</strong></p>
+                                <br>
+                                <div class="has-text-left">
+                                    <span class="tag is-success">Reciente</span>
+                                    <span class="tag is-warning">Recompensa</span>
+                                    <span class="tag is-danger">Sick</span>
+                                </div>
+                                <br>
+                                <div>
+                                    <a href="founds.html" class="button is-small is-fullwidth is-violet is-outlined">
+                                        Tengo información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card column m-4">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="assets/img/pet-4.webp" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p><strong>Name: </strong>Chuva</p>
+
+                                <p><strong>Last seen: </strong>Calzada olimpica, a la altura de CUCEI.</p>
+                                <p>Please call: <strong>33-2233-4455</strong></p>
+                                <br>
+                                <div class="has-text-left">
+                                    <span class="tag is-primary">Roedor</span>
+                                    <span class="tag is-warning">Recompensa </span>
+                                </div>
+                                <br>
+                                <div>
+                                    <a href="founds.html" class="button is-small is-fullwidth is-violet is-outlined">
+                                        Tengo información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END -->
+            </div>
+        </section>
+    </main>
+    <!-- END -->
+
+    <!-- Footer -->
+    <footer class="footer columns m-0">
+        <div class="has-text-right column">
+            <a href="#">
+                <img src="assets/img/brand.png" class="img-logo" alt="Logotype" width="112" height="28" />
+            </a>
+        </div>
+        <div class="content has-text-centered column">
+            <p>&copy; 2020 <strong>Cesar Vergara.</strong> All Rights Reserverd</p>
+        </div>
+        <div class="column">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/cesardanielvg/" target="_blank"><i class="fab fa-instagram"></i>
+                        Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Cesar.Vergara.25" target="_blank"><i class="fab fa-facebook"></i>
+                        Facebook</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- END -->
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Meta tags to SEO positioning -->
+  <meta name="description" content="Dedicated page comitted to help you find your pet" />
+  <meta name="keywords" content="web, vet, pets, dog, cat, bulma, html, template, javascript" />
+  <meta name="author" content="Cesar Vergara" />
+  <!-- Icon -->
+  <link rel="Icon" href="favicon.ico" />
+  <!-- Styles, Script, Font Family... -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+  <script src="https://kit.fontawesome.com/3a84c50d6a.js" crossorigin="anonymous"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/founds.js"></script>
+  <title>VetFinder</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar container" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="assets/img/brand.png" class="img-logo" alt="Logotype" />
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="index.html" class="navbar-item">
+          INICIO
+        </a>
+
+        <a href="searchs.html" class="navbar-item">
+          SE BUSCA
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            QUIERO AYUDAR
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              En adopcion
+            </a>
+            <a href="founds.html" class="navbar-item">
+              He encontrado!
+            </a>
+            <a class="navbar-item">
+              Contacto
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Reportar un problema
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <a class="navbar-item" onclick="toggleModal()">Acerca</a>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-background" onclick="toggleModal()"></div>
+      <div class="modal-content">
+        <article class="message">
+          <div class="message-header">
+            <p>Hello World</p>
+            <button class="delete" aria-label="delete" onclick="toggleModal()"></button>
+          </div>
+          <div class="message-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>,
+            tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+            gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend
+              lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna
+            tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis
+            sodales sem.
+          </div>
+        </article>
+      </div>
+    </div>
+  </nav>
+  <!-- END -->
+
+  <!-- Main Content -->
+  <main>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Help -->
+        <div class="help has-text-centered has-background-vet">
+          <h1 class="title py-4 has-text-white">
+            Thank YOU!
+          </h1>
+          <p class="subtitle has-text-white p-4">
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eos odio,
+            consequuntur expedita vero labore pariatur!
+            Quis nemo officiis sequi similique doloremque,
+            mollitia voluptates, error, consectetur maiores id tempore cumque enim.
+          </p>
+          <br>
+        </div>
+        <!-- END -->
+        <br>
+
+
+        <!-- Form -->
+        <form action="" name="form">
+
+          <div class="field">
+            <label class="label">Pet Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Your Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" type="email" name="emailInput" onchange="evalEmail()" placeholder="Email input">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="is-hidden valid icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+              <span class="is-hidden invalid icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+            </div>
+            <p class="is-hidden valid help is-success">This email is valid</p>
+            <p class="is-hidden invalid help is-danger">This email is invalid</p>
+          </div>
+
+          <div class="field">
+            <label class="label">Information</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Found</option>
+                  <option>Seen around</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                I agree to give more details in case owner ontacts me
+              </label>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <a id="submit" class="button is-violet" onclick="notify()">Submit</a>
+            </div>
+            <div class="control">
+              <a href="index.html" class="button is-danger is-light">Cancel</a>
+            </div>
+          </div>
+        </form>
+
+        <br>
+        <!-- Notification -->
+        <div class="notification is-success is-hidden has-text-centered">
+          Primar lorem ipsum dolor sit amet, consectetur
+          adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec
+          nulla. Vestibulum rhoncus a.
+        </div>
+        <!-- END -->
+      </div>
+      <!-- END -->
+
+    </section>
+  </main>
+  <!-- END -->
+
+  <!-- Footer -->
+  <footer class="footer columns m-0">
+    <div class="has-text-right column">
+      <a href="#">
+        <img src="assets/img/brand.png" class="img-logo" alt="Logotype" width="112" height="28" />
+      </a>
+    </div>
+    <div class="content has-text-centered column">
+      <p>&copy; 2020 <strong>Cesar Vergara.</strong> All Rights Reserverd</p>
+    </div>
+    <div class="column">
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/xifra_latinoamerica/" target="_blank"><i class="fab fa-instagram"></i>
+            Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/xifralifestyle" target="_blank"><i class="fab fa-facebook"></i>
+            Facebook</a>
+        </li>
+        <li><a href="https://www.facebook.com/xifralifestyle" target="_blank"><i class="fab fa-linkedin"></i>
+            Linkedin</a< /li>
+      </ul>
+    </div>
+  </footer>
+  <!-- END -->
+</body>
+
+</html>

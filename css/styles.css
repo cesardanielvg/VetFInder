@@ -1,0 +1,134 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+.navbar {
+  background-color: #e6e6e6;
+}
+
+.hero {
+  border-radius: 1rem;
+}
+
+.hero.has-background {
+  position: relative;
+  overflow: hidden;
+}
+.hero-background {
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.hero-background.is-transparent {
+  opacity: 0.4;
+}
+
+.footer,
+#navbarBasicExample {
+  background-color: #e6e6e6;
+}
+
+@media (max-width: 1024px) {
+  .footer,
+  #navbarBasicExample {
+    background-color: #d4d4d4;
+  }
+}
+
+.navbar-start {
+  margin: auto;
+  justify-content: space-around;
+}
+
+.navbar-end {
+  margin: 0;
+}
+
+a {
+  font-weight: 600;
+}
+
+/* Slideshow container */
+#slideshow {
+  max-width: 90%;
+  max-height: 60vh;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.slides > img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Caption text */
+.text {
+  color: #e6e6e6;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #e6e6e6;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.has-background-vet{
+  background-color: #b878e294;
+  border-radius: 1rem;
+}
+
+.is-violet{
+  border-color: #b878e2;
+  color: #b878e2;
+}
+
+.is-violet:hover {
+  border-color: #b878e2;
+  background-color: #b878e2;
+  color: white;
+}
